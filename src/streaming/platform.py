@@ -27,5 +27,5 @@ class StreamingPlatform:
         total_minutes = 0.0
         for session in self._sessions:
             if start <= session.timestamp <= end:
-                total_minutes += session.duration_listened_minutes()        
+                total_minutes += session.duration_sec()        
         return total_minutes
