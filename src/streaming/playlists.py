@@ -8,7 +8,7 @@ Classes to implement:
     - CollaborativePlaylist
 """
 
-from streaming.tracks import Track
+from tracks import Track
 
 
 class Playlist:
