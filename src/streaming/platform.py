@@ -19,13 +19,12 @@ class StreamingPlatform:
         self._playlists = {} 
         self._sessions = []   
 
-    def total_listening_time_minutes(self, start: datetime, end: datetime) -> float:
-        """
+       """
         Calculates total duration from the global _sessions list 
         within the specified datetime range.
         """
+    def total_listening_time_minutes(self, start: datetime, end: datetime) -> float:
         total_minutes = 0.0
-        
         for session in self._sessions:
             if start <= session.timestamp <= end:
                 total_minutes += session.duration_listened_minutes()        
