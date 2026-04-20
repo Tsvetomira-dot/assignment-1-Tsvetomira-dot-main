@@ -14,7 +14,7 @@ Classes to implement:
     - AudiobookTrack
 """
 
-from streaming.artists import Artist
+from artists import Artist
 
 class Track:
     def __init__(self, track_id: str, title: str, duration: float):
