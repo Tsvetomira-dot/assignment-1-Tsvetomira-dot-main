@@ -6,7 +6,7 @@ Implement the Album class for collections of AlbumTrack objects.
 Classes to implement:
   - Album
 """
-from streaming.artists import Artist
+from artists import Artist
 
 class Album:
     def __init__(self, title: str, artist: 'Artist', release_year: int):
